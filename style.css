@@ -16,14 +16,12 @@ body {
 
 .clouds1 {
     position: absolute;
-    width: 300px;
     top: 5px;
     left: 10px;
 }
 
 .clouds2 {
     position: absolute;
-    width: 300px;
     top: 5px;
     right: 10px;
 }
@@ -31,7 +29,7 @@ body {
 .rabbit {
     position: absolute;
     display: block;
-    width: 150px;
+    width: 130px;
     left: 80%;
     bottom: 92%;
 }
@@ -39,7 +37,6 @@ body {
 .fox {
     position: absolute;
     display: block;
-    width: 100px;
     height: 100px;
     left: 0.1%;
     bottom: 92%;
@@ -56,10 +53,11 @@ body {
 
 .calculator {
     position: relative;
-    margin-top: 20%;
-    border: 1px solid black;
     width: 400px;
     height: 500px;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    border: 1px solid black;
     border-radius: 5px;
     background: #413e3e;
     padding: 15px 15Px 20px 20px;
@@ -81,31 +79,31 @@ body {
     margin-bottom: 15px;
 }
 
-.button {
-    width: 19.2%;
-    height: 70px;
+/* .button {
+    height: 14%;
+    width: 17%;
     border-radius: 5px;
     outline: none;
     border: none;
     margin-top: 5px;
     background: whitesmoke;
-    font-size: 20px;
+    font-size: 100%;
     cursor: pointer;
     user-select: none;
 }
 
 .buttonC { 
-    width: 19.2%;
-    height: 70px;
+    height: 14%;
+    width: 17%;
     border-radius: 5px;
     outline: none;
     border: none;
     margin-top: 5px;
     background: #f4b9eded;
-    font-size: 20px;
+    font-size: 100%;
     cursor: pointer;
     user-select: none;
-}
+} */
 
 .buttonEqual { /* = */
     position: absolute;
@@ -135,28 +133,133 @@ body {
     filter: brightness(90%);
 }
 
-@media(max-width:480px) {
-    .button {
-        width: 23.4%;
-    }
-}
-
-@media(max-width:320px) {
-    .button {
-        width: 23%;
-    }
-}
-
-@media  screen and (min-width: 1300px) and (min-height: 700px) {
+@media (min-device-width:1200px) {
     .calculator {
-        position: relative;
-        margin-top: 10%;
-        border: 1px solid black;
         width: 400px;
-        height: 550px;
+    }
+    .button {
+        height: 14%;
+        width: 19.2%;
         border-radius: 5px;
-        background: #413e3e;
-        padding: 15px 15Px 20px 20px;
-        box-shadow: 0px 2px 4px 0px black;
+        outline: none;
+        border: none;
+        margin-top: 5px;
+        background: whitesmoke;
+        font-size: 100%;
+        cursor: pointer;
+        user-select: none;
+    }
+    .buttonC {
+        height: 14%;
+        width: 19.2%;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-top: 5px;
+        background: #f4b9eded;
+        font-size: 100%;
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+@media (max-device-width:1199px) {
+    .calculator {
+        width: 400px;
+    }
+    .button {
+        height: 14%;
+        width: 19.2%;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-top: 5px;
+        background: whitesmoke;
+        font-size: 100%;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    .buttonC {
+        height: 14%;
+        width: 19.2%;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-top: 5px;
+        background: #f4b9eded;
+        font-size: 100%;
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+@media (max-device-width:475px) {
+    .calculator {
+        width: 400px;
+    }
+    .button {
+        margin-left: 1.8%;
+        margin-top: 2%;
+        height: 12%;
+        width: 17%;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-top: 5px;
+        background: whitesmoke;
+        font-size: 100%;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    .buttonC {
+        margin-left: 1.8%;
+        margin-top: 2%;
+        height: 12%;
+        width: 17%;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-top: 5px;
+        background: #f4b9eded;
+        font-size: 100%;
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+@media (max-device-width:335px) {
+    .calculator {
+        width: 400px;
+    }
+    .button {
+        margin-left: 1%;
+        margin-top: 1%;
+        height: 12%;
+        width: 17%;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-top: 5px;
+        background: whitesmoke;
+        font-size: 100%;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    .buttonC {
+        margin-left: 1%;
+        margin-top: 1%;
+        height: 12%;
+        width: 17%;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-top: 5px;
+        background: #f4b9eded;
+        font-size: 100%;
+        cursor: pointer;
+        user-select: none;
     }
 }
